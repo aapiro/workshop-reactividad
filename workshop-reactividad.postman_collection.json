@@ -35,7 +35,7 @@
 			"response": []
 		},
 		{
-			"name": "cliente consulta todas las peliculas",
+			"name": "servidor blocking get all",
 			"request": {
 				"method": "GET",
 				"header": []
@@ -43,7 +43,23 @@
 			"response": []
 		},
 		{
-			"name": "cliente webclient todas las peliculas",
+			"name": "resttemplate blocking get all",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "servidor reactivo get all",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "webclient reactivo get all",
 			"request": {
 				"method": "GET",
 				"header": []

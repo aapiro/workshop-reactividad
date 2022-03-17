@@ -24,7 +24,6 @@ import java.util.concurrent.TimeUnit;
 public class WebFluxConfig implements WebFluxConfigurer
 {  
 	Logger logger = LoggerFactory.getLogger(WebFluxConfig.class);
-
 	@Bean
 	public WebClient getWebClient()	{
 

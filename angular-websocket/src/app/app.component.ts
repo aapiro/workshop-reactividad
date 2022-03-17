@@ -16,13 +16,13 @@ export class AppComponent implements OnInit {
 
   messages: string[] = [];
 
-  private subject = webSocket('ws://localhost:8080/push');
+  private subject = webSocket('ws://localhost:9090/push');
 
   ngOnInit(): void {
     this.subject.next({message: 'message'}); // <- ping first message
     this.subject.subscribe(message => {       // <- listen messages from server
       const event = message as Event;
-      this.messages.push(event.name + ' #' + event.price);
+      this.messages.push(event.name + ' ' + event.price +'$');
     });
   }
 }

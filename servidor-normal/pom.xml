@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.workshopreactividad</groupId>
-	<artifactId>servidor-webflux</artifactId>
+	<artifactId>servidor-blocking</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>servidor-webflux</name>
-	<description>Servidor de ejemplo para implementar webflux conectando a mongodb</description>
+	<name>servidor-blocking</name>
+	<description>Servidor de ejemplo para implementar blocking conectando a mongodb</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

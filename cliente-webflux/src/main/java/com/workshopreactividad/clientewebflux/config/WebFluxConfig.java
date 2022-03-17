@@ -24,7 +24,7 @@ import java.util.concurrent.TimeUnit;
 public class WebFluxConfig implements WebFluxConfigurer
 {  
 	Logger logger = LoggerFactory.getLogger(WebFluxConfig.class);
-	
+
 	@Bean
 	public WebClient getWebClient()	{
 
@@ -36,7 +36,7 @@ public class WebFluxConfig implements WebFluxConfigurer
 								.addHandlerLast(new WriteTimeoutHandler(10000, TimeUnit.MILLISECONDS)));
 
 		return WebClient.builder()
-				.baseUrl("http://localhost:8080")
+				.baseUrl("http://localhost:9080")
 				.clientConnector(new ReactorClientHttpConnector(httpClient))
 				.build();
 	}

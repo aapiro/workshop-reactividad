@@ -1,18 +1,19 @@
 package com.workshopreactividad.clientewebflux.service;
 
 import com.workshopreactividad.clientewebflux.model.Movie;
-import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
- 
+import org.springframework.http.HttpStatus;
+
+import java.util.List;
+
 public interface MovieBlockingService
 {
-	Flux<Movie> findAll();
+	List<Movie> findAll();
 	
-	Mono<Movie> findById(Integer id);
+	Movie findById(Integer id);
  
-    Mono<Movie> create(Movie e);
+    HttpStatus create(Movie e);
  
-    Mono<Movie> update(Movie e);
+    Movie update(Movie e);
  
-    Mono<Void> delete(Integer id);
+    Void delete(Integer id);
 }
